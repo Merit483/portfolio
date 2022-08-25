@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <a href="indext.html" id="logo" title="logo du site"></a>
+
+        <div id="burger">
+            <div id="burger-container">
+                <nav>
+                    <ul>
+                        <li><a href="#presentation">Présentation</a></li>
+                        <li><a href="#competence">Compétences</a></li>
+                        <li><a href="#projet">Mes Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <button id="button-burger">&#9776;</button>
+
+            <div id="burger-sidebar">
+                <div id="burger-sidebar-header"></div>
+                <div id="burger-sidebar-body"></div>
+            </div>
+            <div id="burger-overlay"></div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Développeuse Web et Web mobile</h1>
+        
+        <div class="container-presentation" id="presentation">
+            <div class="circle"></div>
+
+            <h2>Présentation</h2>
+            <p>Je m'appelle Edwige Joaniquet. Après avoir découvert les jeux-vidéos, mais surtout le développement et ce qui en découle, j'ai été intrigué par le développement en général et j'ai voulu en apprendre plus. Je suis actuellement en formation de développeur web et web mobile. Depuis le début de la formation, j'ai pu apprendre beaucoup de choses concernant le monde du web et plus précisément le monde du code.</p>   
+        </div>
+
+        <!-- competence -->
+        <div class="container-competence" id="competence">
+            <h2>Compétences</h2>
+            
+            <div class="element">
+                <div class="front">
+                    <div class="icon">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <p>HTML5 / CSS3 / JavaScript</p>
+                    <p>Bootstrap</p>
+                </div>
+
+                <div class="back">
+                    <div class="icon">
+                        <i class="fa-brands fa-php"></i>
+                    
+                    </div>
+                    <h3>Backend</h3>
+                    <p>PHP / MySQL</p>
+                </div>
+
+                <div class="outil">
+                    <div class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <h3>Outil Collaboratif</h3>
+                    <p>GIT / GitHub</p>
+                </div>
+
+                <div class="framework">
+                    <div class="icon">
+                        <i class="fa-brands fa-symfony"></i>
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <h3>Framework</h3>
+                    <p>Symfony / React</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- projets -->
+        <div class="container-projet" id="projet">
+            <h2>Projets</h2>
+
+            
+            <div id="ligne1">
+                <!-- projet1 -->
+                <div class="projet">
+                    <div class="img">
+                        <figcaption>Reconstitution d'une page HTML</figcaption>
+                        <img class="btn" data-target="#modal1" src="images/img/travail-html3.png" alt="travail-html3">
+                    </div>
+
+                    <div class="modal" id="modal1">
+                        <div class="header">
+                            <h3 class="title">Reconstitution d'une page HTML</h3>
+                            <p>Outils utilisés: HTML5 / CSS3</p>
+                            <button class="btn modal-btn" data-target="#modal1">Fermer</button>
+
+                        </div>
+                        <div class="body">
+                            <img src="images/img/travail-html3.png" alt="travail-html3">
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <!-- projet2 -->
+                <div class="projet">
+                    <div class="img">          
+                        <figcaption>Ampoule</figcaption>
+                        <img class="btn" data-target="#modal2" src="images/img/travail-js1.png" alt="travail-js1">
+                    </div>
+
+                    <div class="modal" id="modal2">
+                        <div class="header">
+                            <h3 class="title">Ampoule</h3>
+                            <p>Outils utilisés: HTML5 / CSS3 / JS</p>
+                            <button class="btn modal-btn" data-target="#modal2">Fermer</button>
+                        </div>
+                        
+                        <div class="body">
+                            <img src="images/img/travail-js1.png" alt="travail-js1">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="ligne2">
+                <!-- projet3 -->
+                <div class="projet">
+                    <div class="img">
+                        <figcaption>Roue de chargement</figcaption>
+                        <img class="btn" data-target="#modal3" src="images/img/travail-js5.png" alt="travail-js5">
+                    </div>
+
+                    <div class="modal" id="modal3">
+                        
+                        <div class="header">
+                            <h3 class="title">Roue de chargement</h3>
+                            <p>Outils utilisés: HTML5 / CSS3 / JS</p>
+                            <button class="btn modal-btn" data-target="#modal3">Fermer</button>
+                        </div>
+                        <div class="body">
+                            <img src="images/img/travail-js5.png" alt="travail-js5">
+                        </div>                         
+                    </div>
+                </div>
+
+                <!-- projet4 -->
+                <div class="projet">
+                    <div class="img">
+                        <figcaption>Horloge</figcaption>
+                        <img class="btn" data-target="#modal4" src="images/img/travail-js4.png" alt="travail-js4">
+                    </div>
+
+                    <div class="modal" id="modal4">
+
+                        <div class="header">
+                            <h3 class="title">Horloge</h3>
+                            <p>Outils utilisés: HTML5 / CSS3 / JS</p>
+                            <button class="btn modal-btn" data-target="#modal4">Fermer</button>
+                        </div>
+                        <div class="body">
+                            <img src="images/img/travail-js4.png" alt="travail-js4">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="ligne3">
+                <!-- projet5 -->
+                <div class="projet">
+                    <div class="img">
+                        <figcaption>Génération de nombres aléatoires</figcaption>
+                        <img class="btn" data-target="#modal5" src="images/img/travail-js3.png" alt="travail-js3">
+                    </div>
+
+                    <div class="modal" id="modal5">
+                        <div class="header">
+                            <h3 class="title">Génération de nombres aléatoires</h3>
+                            <p>Outils utilisés: HTML5 / CSS3 / JS</p>
+                            <button class="btn modal-btn" data-target="#modal5">Fermer</button>
+                        </div>
+                        <div class="body">
+                            <img src="images/img/travail-js3.png" alt="travail-js3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div id="overlay-anim"></div>
+        </div>
+    
+
+        <!-- contact -->
+        <div class="container-contact" id="contact">
+            <form>
+                <h2>Contact</h2>
+                <p>Si vous avez besoin de me contacter, n'hésitez pas à remplir le formulaire. J'essaierai de vous répondre dans les meilleurs délais.</p>
+                <div id="nom">
+                    <input type="text" name="nom" id="nom" placeholder="Nom" required>
+                </div>
+                <div id="prenom">
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+                </div>
+                <div class="mail">
+                    <input type="email" name="mail" id="mail" placeholder="mail@gmail.com" required/>
+                </div>
+                <div class="message">
+                    <textarea id="message" name="Message" cols="30" rows="10" placeholder="message"></textarea>
+                </div>
+
+                <div class="bouton">
+                    <input type="submit" name="validation" value="Envoyer!"/>
+                </div>
+            </form>
+        </div>
+
+    </main>
+ 
+    <footer>
+        <div>
+            <div id="copyright">&#169;2022 Développeuse web</div>
+            <a id="mention" href="mentions-legales.html">Mentions Légales</a>
+        </div>
+        
+    </footer> 
+
+    <script src="script.js"></script>
+</body>
+</html>

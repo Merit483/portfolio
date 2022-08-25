@@ -1,0 +1,390 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+    background-image: url(images/bg2.jpg);
+    background-size: 1650px;
+    background-repeat: repeat;
+}
+/*-------------------- header -------------------*/
+header {
+	box-shadow: 0 1px 16px rgba(0, 0, 0, 0.4);
+	background: #eee6e8;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 55px;
+	font-size: 15px;
+	padding-block: 16px;
+	padding-left: 32px;
+	text-transform: uppercase;
+	position: relative fixed;
+}
+nav,
+li {
+	display: inline-block;
+}
+nav {
+	vertical-align: top;
+	line-height: 48px;
+}
+li {
+	margin-left: 32px;
+}
+a,
+button {
+	text-decoration: none;
+	color: #333;
+}
+#button-burger {
+	position: absolute;
+	right: 10px;
+	top: 10%;
+	height: 40px;
+	width: 40px;
+	border: none;
+	background: #000;
+	color: #fff;
+    transform: translate(-50%);
+    display: none;
+}
+section {
+	min-width: 100%;
+	height: 90vh;
+	
+} 
+#burger,
+#burger-container {
+	display: inline;
+}
+#burger-overlay {
+	display: none;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+#burger-sidebar {
+	position: fixed;
+	width: 40%;
+	z-index: 11;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease-out;
+	overflow-y: auto;
+	display: none;
+}
+#burger-sidebar li {
+	display: block;
+}
+#burger-sidebar-header {
+	background: #f4c4b4;
+	height: 80px;
+    text-align: center;
+    padding: 10%;
+}
+#burger-sidebar-body {
+	padding-block: 15px;
+	padding-inline: 10px;
+}
+@media screen and (max-width: 1024px) {
+	#burger-container{
+		display: none;
+	}
+	#button-burger,
+	#burger-sidebar,
+	.burger-activated #burger-overlay {
+		display: block;
+	}
+	.burger-activated #burger-sidebar {
+		transform: translateX(0);
+	}
+}
+/*-------------------- presentation ---------------------*/
+h1{
+    text-align: center;
+    margin: 60px;
+}
+
+@media screen and (max-width: 720px) {
+	h1{
+		font-size: 25px;
+	}
+}
+.container-presentation{
+    box-shadow: 0 15px 50px rgb(0,0,0,.2);
+    width: 55%;
+    height: 450px;
+    margin: 50px auto 120px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    background: url(images/imag-profil.webp);
+    background-size: 200px;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 30px;
+}
+.container-presentation>h2{
+    padding: 15px;
+}
+.container-presentation p{
+    line-height: 25px;
+	font-size: 20px;
+}
+@media screen and (max-width: 1065px) {
+	.container-presentation p{
+		font-size: 17px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.container-presentation{
+		width: 80%;
+		height: 290px;
+	}
+	.circle{
+		height: 130px;
+		width: 115px;
+		background-size: 115px;
+		margin: 15px;
+	}
+	.container-presentation>h2{
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	.container-presentation p{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.container-presentation{
+		width: 90%;
+		height: 330px;
+	}
+	.circle{
+		height: 115px;
+		width: 100px;
+		background-size: 100px;
+		margin: 10px 20px 10px 0;
+	}
+
+}
+
+/*-------------------------------- competences -----------------------*/
+.container-competence{
+	box-shadow: 0 15px 50px rgb(0,0,0,.2);
+    width: 55%;
+    height: 500px;
+	margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+h2{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.element{
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+	font-size: 30px;
+    padding-top: 25px;
+}
+.outil, .framework{
+	padding-top: 40px;
+}
+@media screen and (max-width: 1065px) {
+	.element{
+		font-size: 23px;
+	}
+}
+@media screen and (max-width: 843px) {
+	.container-competence{
+		width: 60%;
+		height: 350px;
+	}
+	.element{
+		font-size: 17px;
+		padding-top: 0;
+	}
+	
+}
+@media screen and (max-width: 604px) {
+	.container-competence{
+		width: 70%;
+		height: 500px;
+	}
+	.element{
+		display: flex;
+		flex-direction: column;
+		font-size: 17px;
+		padding-top: 0;
+	}
+}
+
+/*------------------------- projet ----------------------------*/
+.container-projet{
+	box-shadow: 0 15px 50px rgb(0,0,0,.2);
+    width: 80%;
+	margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+#ligne1, #ligne2, #ligne3{
+	display: flex;
+	justify-content: space-around;
+}
+#ligne2{
+	margin: 50px 0;
+}
+.img{
+	width: 350px;
+	cursor: pointer;
+}
+figcaption{
+	text-align: center;
+	padding: 15px;
+}
+.projet img{
+	width: 100%;
+	height: auto;
+}
+
+/*----------------------  fenêtre modal -----------------------*/
+.btn{
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+.modal-btn{
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.modal{
+    width: 450px;
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 50%));
+    transition: top 0.5s ease-in-out;
+    border: 1px solid #ccc;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.modal.active{
+   top: 90%; 
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid #ccc;
+}
+
+.body{
+    padding: 1rem;
+}
+
+#overlay-anim{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#overlay-anim.active{
+    display: block;
+}
+
+@media screen and (max-width: 1065px) {
+	.img-active .img{
+		transform: translateX(0);
+	}
+	.img{
+		width: 250px;
+	}
+}
+@media screen and (max-width: 800px) {
+	#ligne1, #ligne2, #ligne3{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	#ligne2{
+		margin: 0;
+	}
+	.projet{
+		margin: 0 auto;
+	}
+}
+/* ----------------- formulaire ------------------------*/
+
+.container-contact{
+	box-shadow: 0 15px 50px rgb(0,0,0,.2);
+    width: 80%;
+	margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+form{
+	text-align: center;
+}
+#nom, #prenom, #mail, #message, .bouton{
+	margin: 10px;
+    padding: 5px;
+}
+.bouton input{
+	padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+/*----------------- footer ----------------------- */
+footer{
+	background: rgba(150, 148, 148, 0.821);
+}
+footer>div{
+	text-align: center;
+}
+#copyright{
+	padding: 5px;
+}
